@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { ModalStyle, Overlay } from './Modal.styled';
+import { Overlay } from './Modal.styled';
 
 export const Modal = ({ close, children }) => {
   useEffect(() => {
@@ -20,11 +20,7 @@ export const Modal = ({ close, children }) => {
     }
   };
 
-  return (
-    <Overlay onClick={handleClickOnBackdrop}>
-      <ModalStyle>{children}</ModalStyle>
-    </Overlay>
-  );
+  return <Overlay onClick={handleClickOnBackdrop}>{children}</Overlay>;
 };
 
 export default Modal;
