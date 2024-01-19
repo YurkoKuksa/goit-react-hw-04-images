@@ -10,6 +10,7 @@ export const theme = Object.freeze({
     dodgerBlue: '#1e90ff',
     green: '#008000',
     darkOrange: '#ff8c00',
+    darkBlue: '#020B4A',
     tagBackground: ['linear-gradient(to bottom, #FFD194, #D1913C)'],
   },
 
@@ -21,6 +22,8 @@ export const theme = Object.freeze({
 
     button: '5px 5px 15px rgba(0, 0, 0, 0.5) ',
     inner: 'inset 0 0 7px rgba(0, 0, 0, 0.4)',
+    innerTwo: 'inset 0 0 10px  rgba(0, 0, 0, 0.5)',
+    innerTr: 'inset 0 7px 10px  rgba(0, 0, 0, 0.5)',
     hover: '0 0 10px rgba(0, 0, 0, 0.7)',
   },
 });

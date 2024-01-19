@@ -3,8 +3,8 @@ import styled from 'styled-components';
 export const MainContainer = styled.div`
   color: #e9eaf0;
   /* background-color: #2e4ba3; */
-  background-color: ${({ hasPhotos }) =>
-    hasPhotos ? '#2e4ba3' : 'transparent'};
+  background-color: ${({ $hasPhotos }) =>
+    $hasPhotos ? '#2e4ba3' : 'transparent'};
 
   display: grid;
   grid-template-columns: 1fr;

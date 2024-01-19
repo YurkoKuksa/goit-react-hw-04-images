@@ -15,18 +15,19 @@ export const SearchbarStyle = styled.header`
   padding-bottom: 12px;
   color: #fff;
   background-color: #3f51b5;
-  box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2),
-    0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
+  box-shadow: ${({ theme }) => theme.shadows.button};
 `;
 
 export const SearchForm = styled.form`
   display: flex;
   align-items: center;
   width: 100%;
+
   max-width: 600px;
   background-color: #fff;
-  border-radius: 3px;
+  border-radius: 10px;
   overflow: hidden;
+  box-shadow: ${({ theme }) => theme.shadows.button};
 `;
 
 export const Button = styled.button`
@@ -59,8 +60,11 @@ export const Img = styled.img``;
 export const Input = styled.input`
   display: inline-block;
   width: 100%;
+  height: 38px;
   font: inherit;
-  font-size: 20px;
+  font-size: 28px;
+  font-weight: 600;
+  color: ${({ theme }) => theme.colors.darkBlue};
   border: none;
   outline: none;
   padding-left: 4px;
@@ -69,5 +73,6 @@ export const Input = styled.input`
   &::placeholder {
     font: inherit;
     font-size: 18px;
+    font-weight: 400;
   }
 `;
