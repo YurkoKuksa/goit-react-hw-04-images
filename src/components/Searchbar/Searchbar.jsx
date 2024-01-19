@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
+import Logo from 'img/find.svg';
 import {
   Button,
+  Img,
   Input,
   SearchForm,
   SearchbarStyle,
@@ -27,7 +29,9 @@ export class Searchbar extends Component {
       <SearchbarStyle>
         <SearchForm onSubmit={this.handleSubmit} autoFocus>
           <Button type="submit">
-            <SpanLabel>Search</SpanLabel>
+            <SpanLabel>
+              <Img src={Logo} alt="React Logo" />
+            </SpanLabel>
           </Button>
 
           <Input
